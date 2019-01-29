@@ -7,7 +7,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    start: './src/index.js',
+    start: './src/js/index.js',
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -32,7 +32,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/html/baseTemplate.html',
       filename: 'index.html',
-      hash: true,
     }),
     new CleanWebpackPlugin(['dist']),
     new webpack.HashedModuleIdsPlugin(),
