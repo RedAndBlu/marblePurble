@@ -35,7 +35,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin([
       'dist/*.*',
-      'dist/asset/js-images*.*',
+      'dist/asset/js-images/*.*',
     ]),
     new webpack.HashedModuleIdsPlugin(),
   ],
@@ -62,6 +62,13 @@ module.exports = {
             loader: 'file-loader',
             options: {
               outputPath: 'asset/js-images/',
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              disable: true,
             },
           },
         ],
