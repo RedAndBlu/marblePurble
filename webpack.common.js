@@ -33,7 +33,10 @@ module.exports = {
       template: './src/html/baseTemplate.html',
       filename: 'index.html',
     }),
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin([
+      'dist/*.*',
+      'dist/asset/js-images*.*',
+    ]),
     new webpack.HashedModuleIdsPlugin(),
   ],
   module: {
@@ -50,6 +53,17 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader',
+        ],
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'asset/js-images/',
+            },
+          },
         ],
       },
     ],
