@@ -1,0 +1,38 @@
+{
+  "name": "marblepurble",
+  "version": "0.0.1",
+  "description": "just a another webpage",
+  "private": true,
+  "scripts": {
+    "buildDev": "webpack --watch --config webpack.dev.js",
+    "buildPro": "webpack --config webpack.pro.js"
+  },
+  "author": "David D.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RedAndBlu/webpack-basic-setup/issues"
+  },
+  "homepage": "https://github.com/RedAndBlu/webpack-basic-setup#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^1.0.1",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  }
+}
