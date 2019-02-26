@@ -23,21 +23,9 @@ module.exports = {
 		'react'
 	],
 	'rules': {
-		'indent': [
-			'error',
-			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'windows'
-		],
-		'quotes': [
-			'error',
-			'single'
-		],
-		'semi': [
-			'error',
-			'always'
-		]
-	}
+		'indent': ['error', 2],
+		'linebreak-style': ['error', 'windows'],
+		'quotes': ['error', 'single'],
+		'semi': ['error','always'],
+	},
 };
